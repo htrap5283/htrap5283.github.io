@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Parth Panchal Portfolio</title>
+
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet CSS -->
+    <link
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <span class="material-icons-outlined me-1">important_devices</span>
+            PARTH PANCHAL
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container px-3">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Hero -->
+      <header class="bg-light py-5">
+        <div class="container px-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5">
+                <h2 class="text-center fw-bold mb-2">
+                  Hi! I am Parth Panchal,
+                </h2>
+                <h2 class="text-primary text-center fw-bold mb-2">
+                  a full-stack web and mobile app developer
+                </h2>
+                <p class="lead text-muted mb-4">
+                  I specialize in building web and mobile applications using
+                  React, React Native, Java, and more. Scroll down to see what I
+                  have been working on.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                  <a
+                    class="btn btn-primary btn-large text-uppercase"
+                    href="./PARTH_PANCHAL_RESUME_AUG_2024.pdf"
+                    download
+                  >
+                    Download Resume
+                    <span class="material-icons-outlined ms-2">download</span>
+                  </a>
+
+                  <a
+                    class="btn btn-outline-primary btn-large text-uppercase"
+                    href="#projects"
+                  >
+                    View My Work
+                    <span class="material-icons-outlined ms-2"
+                      >manage_search</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 justify-content-center">
+              <img
+                class="img-fluid rounded-3 my-5"
+                src="images/Parth_Pro_pic.JPG"
+                alt="Hero Image"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Hero -->
+
+      <main>
+        <!-- About -->
+        <section id="about" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">About</h2>
+              <p class="lead text-muted mb-5">
+                I am a freelance web and mobile app developer who builds
+                elegant, fast, and scalable applications.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary"
+                    >palette</span
+                  >
+                </div>
+                <h5>Design</h5>
+                <p class="text-muted mb-0">
+                  I create beautiful, modern designs optimized for multiple
+                  color modes (light and dark themes).
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary"
+                    >code</span
+                  >
+                </div>
+                <h5>Development</h5>
+                <p class="text-muted mb-0">
+                  I develop responsive, scalable, and fast applications using
+                  the best standards and coding practices.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary"
+                    >settings</span
+                  >
+                </div>
+                <h5>Launch & Maintenance</h5>
+                <p class="text-muted mb-0">
+                  Once the application is ready, I will help you launch it and
+                  teach you how to update and maintain it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About -->
+
+        <hr />
+
+        <!-- Projects -->
+        <!-- Projects -->
+        <section id="projects" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Projects</h2>
+              <p class="lead text-muted mb-5">
+                View some of my latest projects
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Resume Management</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">Redux</div>
+                      <div class="badge bg-primary rounded-pill">Bootstrap</div>
+                    </div>
+                    <p class="card-text">
+                      A web application for managing employee resumes with
+                      React, Redux, Bootstrap, and PostgreSQL.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Jazz Festival Tickets</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">HTML</div>
+                      <div class="badge bg-primary rounded-pill">CSS</div>
+                      <div class="badge bg-primary rounded-pill">
+                        JavaScript
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      A website for booking Jazz Festival tickets using HTML,
+                      CSS, and JavaScript.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Landlord and Renter’s App</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Kotlin</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Android Studio
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      An Android application for landlords and renters built
+                      using Kotlin and Android Studio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Electric Vehicle Rental Listing App
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        API Integration
+                      </div>
+                      <div class="badge bg-primary rounded-pill">Geocoding</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Form Validation
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      A comprehensive application that allows users to create
+                      and manage rental listings for electric vehicles. Users
+                      can search for vehicle details using an integrated API,
+                      pre-populate forms with vehicle data, perform geocoding to
+                      determine the location, and ensure all required fields are
+                      validated before submission.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Parth-Videos (React Native App)
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        React Native
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Firebase Firestore
+                      </div>
+                      <div class="badge bg-primary rounded-pill">Expo Go</div>
+                      <div class="badge bg-primary rounded-pill">
+                        DailyMotion API
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      A React Native application that retrieves and displays
+                      trending videos from Wired Magazine’s channel on
+                      DailyMotion.com. The app features a Home screen for
+                      browsing videos, a Video Details screen for more
+                      information, and a Favourite List screen for saving
+                      preferred videos. Data persistence is managed using
+                      Firebase Firestore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Group Nature Walk Sessions iOS App
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">SwiftUI</div>
+                      <div class="badge bg-primary rounded-pill">iOS</div>
+                      <div class="badge bg-primary rounded-pill">
+                        FirebaseAuth
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Cloud Firestore
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Developed a SwiftUI iOS application to promote "Group
+                      Nature Walk Sessions" around the city. The app features
+                      user authentication with FirebaseAuth, allowing users to
+                      view, favorite, and purchase tickets for guided nature
+                      tours. Users can explore detailed session information,
+                      share session details with other apps, and view venue
+                      locations on a map. User-generated data, such as favorite
+                      sessions and purchased tickets, is securely stored in
+                      Cloud Firestore. This project highlights my skills in
+                      mobile app development, backend integration, and creating
+                      seamless user experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects -->
+
+        <hr />
+
+        <!-- Education -->
+        <section id="education" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Education</h2>
+              <p class="lead text-muted mb-5">My academic background</p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Mobile Application Development and Strategy
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        George Brown College
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Toronto, ON
+                      </div>
+                      <div class="badge bg-primary rounded-pill">2024</div>
+                    </div>
+                    <p class="card-text">
+                      Post Graduate Diploma, GPA: 4.00 (with Honours)
+                    </p>
+                    <p class="card-text">
+                      Developed and optimized Android,iOS Cross Platform
+                      applications using Kotlin, Swift and React Native expo.
+                      Used Google Firebase for Cloud services such as Firestore
+                      Database, Firebase Authentication, Firebase Storage.
+                      Created full-stack web applications using NodeJS, Express
+                      JS, MongoDB, HTML, CSS, Bootstrap.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Enterprise Software Development
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        Humber College
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Toronto, ON
+                      </div>
+                      <div class="badge bg-primary rounded-pill">2023</div>
+                    </div>
+                    <p class="card-text">
+                      Post Graduate Diploma, GPA: 4.00 (with Honours)
+                    </p>
+                    <p class="card-text">
+                      Gained in-depth knowledge of enterprise-level software
+                      development, focusing on building scalable and efficient
+                      software solutions. Acquired proficiency in various
+                      development tools and frameworks, enhancing skills in
+                      database management, web technologies, and software
+                      architecture. Engaged in hands-on projects, emphasizing
+                      the application of Agile methodologies to deliver
+                      high-quality software.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Computer Engineering</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">LDRP-ITR</div>
+                      <div class="badge bg-primary rounded-pill">
+                        Gandhinagar, Gujarat
+                      </div>
+                      <div class="badge bg-primary rounded-pill">2020</div>
+                    </div>
+                    <p class="card-text">Bachelor of Engineering, GPA: 3.30</p>
+                    <p class="card-text">
+                      Developed a solid foundation in computer engineering
+                      principles, including programming, data structures,
+                      algorithms, and computer networks. Participated in various
+                      projects and internships, applying theoretical knowledge
+                      to practical challenges. Enhanced problem-solving skills
+                      and gained experience in software development,
+                      contributing to academic and extracurricular projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Education -->
+
+        <hr />
+
+        <!-- Experience -->
+        <section id="experience" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Professional Experience</h2>
+              <p class="lead text-muted mb-5">My work history</p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Fresh Associate</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        Walmart Canada
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Toronto, ON
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Oct 2023 - Present
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Safely stocked coolers and freezers, ensuring customer
+                      accessibility and optimal presentation. Proactively
+                      managed inventory to minimize waste and maintain product
+                      freshness. Maintained store aesthetics through merchandise
+                      zoning and upheld safety protocols. Provided exceptional
+                      customer service and assisted with inquiries and
+                      merchandise location. Trained new associates and led team
+                      initiatives, demonstrating leadership qualities.
+                      Recognized for exceeding performance expectations and
+                      receiving positive feedback.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Web Developer</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        Browseinfo
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Ahmedabad, Gujarat
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Jan 2021 - Dec 2021
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Developed new modules in Odoo ERP and CRM, meeting
+                      industry standards. Resolved design-related issues in new
+                      and existing modules. Successfully migrated modules to
+                      Odoo versions 13, 14, and 15. Created custom e-commerce
+                      themes for Odoo versions 14 and 15. Addressed
+                      module-related issues promptly and efficiently. Recognized
+                      for meeting deadlines and improving system performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">
+                      Capstone Project: Resume Management
+                    </h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">
+                        Cabot Technology Solutions
+                      </div>
+                      <div class="badge bg-primary rounded-pill">
+                        Toronto, ON
+                      </div>
+                      <div class="badge bg-primary rounded-pill">Aug 2023</div>
+                    </div>
+                    <p class="card-text">
+                      Developed a web application for internal use to manage
+                      employee resumes. Front-end Development: Utilized ReactJS,
+                      Bootstrap, Redux, and Hooks for a responsive user
+                      interface. Database Management: Designed and implemented
+                      the PostgreSQL database. Employed libraries: CORS,
+                      Express, Pool, pg, body-parser, PDFKit. Enabled employees
+                      to submit resumes and convert them to the company's
+                      preferred format. Created a secure HR portal for managing
+                      resumes (view, download, delete). Incorporated a search
+                      feature for easy employee detail lookup. Coordinated with
+                      a team member who developed the back-end using Node.js.
+                      Adapted to changing requirements and followed Agile
+                      development methodology. Ensured consistent styling using
+                      a common file and Bootstrap classes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Experience -->
+
+        <hr />
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Contact</h2>
+              <p class="lead text-muted mb-5">
+                Do you need a full-stack web and mobile app developer? I would
+                love to hear from you.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-xl-5 col-xxl-6 mb-5">
+                <div id="map" style="height: 400px"></div>
+              </div>
+              <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Address</h6>
+                  <p class="lead mb-0">Toronto, ON</p>
+                </div>
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Phone</h6>
+                  <p class="lead mb-0">+1(647) 671-3348</p>
+                </div>
+                <div class="mb-5">
+                  <h6 class="text-uppercase mb-2">Email</h6>
+                  <p class="lead mb-0">parthjp5283@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
+        <hr />
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section">
+          <div class="container">
+            <div class="contact-form-container">
+              <div class="contact-form-header">
+                <h2>Contact Me</h2>
+                <p>Please fill out the form below to get in touch.</p>
+              </div>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Send Message
+                </button>
+              </form>
+              <div id="formResponse" class="mt-3"></div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact Form Section -->
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <div class="container px-5 mb-2">
+        Copyright &copy; 2024 Parth Panchal.
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
